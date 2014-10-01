@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.smartplace.ahorrolibre.main.NavigationDrawerFragment" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/background_gray" >
+    <com.makeramen.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_profile"
+        android:scaleType="fitCenter"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin= "20dp"
+        android:src="@drawable/ic_profile_default"
+        app:oval="true"
+        app:border_width="4dp"
+        app:border_color="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Roberto Rey Magaña"
+        android:id="@+id/name_user" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical">
+            <com.makeramen.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_drawer_savings"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_drawer_my_savings"
+                app:oval="true"
+                app:border_width="4dp"
+                app:border_color="@android:color/white"/>
+            <TextView
+                android:id="@+id/name_drawer_savings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:gravity="center"
+                android:text="@string/section_my_savings"
+                android:textColor="@color/font_color"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical">
+            <com.makeramen.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_drawer_friends"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_drawer_my_friends"
+                app:oval="true"
+                app:border_width="4dp"
+                app:border_color="@android:color/white"/>
+            <TextView
+                android:id="@+id/name_drawer_friends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:gravity="center"
+                android:text="@string/section_my_friends"
+                android:textColor="@color/font_color"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical">
+            <com.makeramen.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_drawer_history"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_drawer_my_history"
+                app:oval="true"
+                app:border_width="4dp"
+                app:border_color="@android:color/white"/>
+            <TextView
+                android:id="@+id/name_drawer_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:gravity="center"
+                android:text="@string/section_my_history"
+                android:textColor="@color/font_color"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical">
+            <com.makeramen.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_drawer_account"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_drawer_account"
+                app:oval="true"
+                app:border_width="4dp"
+                app:border_color="@android:color/white"/>
+            <TextView
+                android:id="@+id/name_drawer_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:gravity="center"
+                android:text="@string/section_account"
+                android:textColor="@color/font_color"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="normal"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:background="@android:color/white"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/how_does_it_work"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_btn_how_it_works" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/privacy_terms"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_btn_privacy" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/logout"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/theme_color"
+            android:id="@+id/txt_btn_logout" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
