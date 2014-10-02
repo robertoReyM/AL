@@ -52,6 +52,7 @@ public class AccountFragment extends Fragment {
         if (getArguments() != null) {
             mPosition = getArguments().getInt(ARG_POSITION);
         }
+
     }
 
     @Override
